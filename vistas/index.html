@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Reportes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Generar Reportes</h2>
+        <form action="reportes.php" method="POST"> <!-- Cambiado de reportes.php a GenerarReporteServlet -->
+            <div class="form-group">
+                <label for="tipo">Seleccione el tipo de reporte:</label>
+                <select class="form-control" id="tipo" name="tipo" required>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="resumen">Resumen</option> <!-- Opción añadida -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Generar Reporte</button>
+        </form>
+    </div>
+</body>
+</html>
